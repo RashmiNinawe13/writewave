@@ -1,110 +1,131 @@
-# writewave
-📝 Introduction
+WriteWave Testing and Automation
 
+Project Overview
 
-This project involves the manual testing of the WriteWave Clone Website provided by Masai School. The testing ensured the website's functionality and usability while identifying potential issues.
+This repository encompasses both manual and automated testing efforts for the WriteWave application. It includes test planning, test scenarios, test cases, bug reports, test summaries, and automation scripts to ensure the application's functionality and quality.
 
-💁️ Directory Structure
+Directory Structure
 
-Test Plan: Document outlining testing scope, objectives, and strategies.
+writewave/
+├── README.md                                 # Project documentation
+├── manual_testing/
+│   ├── Test Plan for WriteWave.docx          # Test plan document
+│   ├── Test Scenarios for WriteWave.xlsx     # Test scenarios document
+│   ├── Test Cases for WriteWave.xlsx         # Test cases document
+│   ├── Bug Report for WriteWave.xlsx         # Bug report document
+│   ├── Test Summary Report for WriteWave.docx# Test summary report
+│   └── Test Mind Map for WriteWave.png       # Test mind map
+└── automation_testing/
+    ├── src/
+    │   ├── main/
+    │   │   └── java/
+    │   │       ├── base/
+    │   │       │   └── BaseTest.java         # Base class for test setup and teardown
+    │   │       ├── pages/
+    │   │       │   ├── LoginPage.java        # Page Object Model (POM) for Login Page
+    │   │       │   ├── DashboardPage.java    # POM for Dashboard Page
+    │   │       │   └── CreatePostPage.java   # POM for Create Post Page
+    │   │       └── tests/
+    │   │           ├── LoginTest.java        # Test cases for Login functionality
+    │   │           └── CreatePostTest.java   # Test cases for Create Post functionality
+    │   └── test/
+    │       └── java/                         # Additional test-specific code if needed
+    ├── pom.xml                               # Maven dependencies and configurations
+    ├── testng.xml                            # TestNG test suite configuration
+    ├── drivers/                              # WebDriver executables (e.g., chromedriver)
+    ├── reports/                              # Test execution reports
+    ├── logs/                                 # Log files for debugging
+    └── screenshots/                          # Screenshots for failed test cases
 
-RTM (Requirements Traceability Matrix): Links requirements to test cases for complete coverage.
+Manual Testing Approach
 
-Test Scenarios: High-level descriptions of user interactions.
+The manual testing process includes:
 
-Test Cases: Step-by-step instructions for testing functionalities.
+Test Plan: Defines the testing scope, objectives, and methodology.
 
-Bug Report: Detailed report of identified bugs with severity levels.
+Test Scenarios: Identifies different functional and non-functional scenarios to test.
 
-Summary: Overview of website functionality and test outcomes.
+Test Cases: Documents detailed test steps, expected results, and actual results.
 
-Mind Map: Visual diagram of the testing process.
+Bug Report: Logs issues found during testing with severity and steps to reproduce.
 
-🎯 Features Tested
+Test Summary Report: Summarizes the testing outcomes and overall quality assessment.
 
-User Authentication
+Test Mind Map: A visual representation of the testing strategy and coverage.
 
-Login and Signup functionalities.
+Automation Testing Approach
 
-Content Management
+The automation framework is built using Selenium with Java, following the Page Object Model (POM) design pattern. It integrates best practices for maintainability and scalability, supporting TestNG for test execution and Maven for dependency management.
 
-Creating, editing, and deleting articles.
+Features
 
-User Dashboard
+Page Object Model (POM): Enhances test maintainability by separating page elements and actions.
 
-Navigation and UI responsiveness.
+TestNG Integration: Facilitates structured test execution and reporting.
 
-Collaboration Features
+Maven for Dependency Management: Simplifies project setup and dependency handling.
 
-Sharing and commenting functionalities.
+Cross-Browser Testing: Ensures application functionality across different browsers.
 
-Responsiveness
+Detailed Reporting: Generates comprehensive test execution reports.
 
-Compatibility across devices.
+Prerequisites
 
-Error Handling
+Java Development Kit (JDK) 8 or higher
 
-Validation of edge cases and invalid inputs.
+Maven
 
-🛠️ Design Decisions and Assumptions
+Selenium WebDriver
 
-Focused on exploratory testing to uncover hidden issues.
+TestNG
 
-Assumed cross-browser compatibility as a requirement.
+An IDE like IntelliJ IDEA or Eclipse
 
-Followed RTM for comprehensive coverage.
+Installation & Setup
 
-📊 Testing Artifacts
+Clone the Repository:
 
-1. Test Plan
+git clone https://github.com/RashmiNinawe13/writewave.git
 
-Defined the scope, objectives, and testing strategies.
+Navigate to the Project Directory:
 
-2. RTM
+cd writewave/automation_testing
 
-Mapped requirements to corresponding test cases.
+Install Dependencies:
 
-3. Test Scenarios
+mvn clean install
 
-Detailed user-centric interaction scenarios.
+Running Tests
 
-4. Test Cases
+Execute All Tests:
 
-Step-by-step instructions with expected vs. actual results.
+mvn test
 
-5. Bug Report
+Execute Specific Test Suite:
 
-Detailed findings, severity levels, and reproduction steps.
+mvn test -DsuiteXmlFile=testng.xml
 
-6. Mind Map
+Reporting
 
-Diagram representing the testing approach and process.
+Test execution reports are generated and can be found in the reports/ folder.
 
-🐞 Key Bugs Identified
+Contributing
 
-Critical: Collaboration feature did not sync real-time changes.
+To contribute:
 
-Major: Article editor crashed when adding high-resolution images.
+Fork the repository.
 
-Minor: UI misalignment on mobile dashboard.
+Create a new branch (feature-branch-name).
 
-🚀 Installation & Getting Started
+Commit your changes (git commit -m "Description of changes").
 
-This was a manual testing project, so no installation is required. Testing was performed on the provided WriteWave Clone website URL.
+Push to the branch (git push origin feature-branch-name).
 
-🖋️ Summary
+Open a Pull Request.
 
-The testing process helped uncover critical bugs, verify user flows, and ensure the website meets its functional requirements. This project emphasized the importance of structured manual testing for identifying key issues.
+Contact
 
-💻 Technology Stack
+For any inquiries, please reach out to the project maintainers.
 
-Documentation Tools: MS Word, Google Sheets
-
-Mind Mapping: XMind
-
-Testing Environments: Chrome, Firefox, and Mobile Browsers
-
-🏆 Acknowledgments
-
-Special thanks to Masai School and instructors Pooja Ma’am and Yogesh Sir for their guidance and support throughout the project.
+Happy Testing! 🚀
 

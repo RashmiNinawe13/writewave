@@ -1,11 +1,11 @@
-WriteWave Testing and Automation
+# WriteWave Testing and Automation
 
-Project Overview
+## Project Overview
 
 This repository encompasses both manual and automated testing efforts for the WriteWave application. It includes test planning, test scenarios, test cases, bug reports, test summaries, and automation scripts to ensure the application's functionality and quality.
 
-Directory Structure
-
+# Directory Structure
+~~~
 writewave/
 ├── README.md                                 # Project documentation
 ├── manual_testing/
@@ -36,10 +36,10 @@ writewave/
     ├── reports/                              # Test execution reports
     ├── logs/                                 # Log files for debugging
     └── screenshots/                          # Screenshots for failed test cases
+~~~
+# Manual Testing Approach
 
-Manual Testing Approach
-
-The manual testing process includes:
+## The manual testing process includes:
 
 Test Plan: Defines the testing scope, objectives, and methodology.
 
@@ -53,11 +53,11 @@ Test Summary Report: Summarizes the testing outcomes and overall quality assessm
 
 Test Mind Map: A visual representation of the testing strategy and coverage.
 
-Automation Testing Approach
+# Automation Testing Approach
 
 The automation framework is built using Selenium with Java, following the Page Object Model (POM) design pattern. It integrates best practices for maintainability and scalability, supporting TestNG for test execution and Maven for dependency management.
 
-Features
+## Features
 
 Page Object Model (POM): Enhances test maintainability by separating page elements and actions.
 
@@ -69,7 +69,7 @@ Cross-Browser Testing: Ensures application functionality across different browse
 
 Detailed Reporting: Generates comprehensive test execution reports.
 
-Prerequisites
+# Prerequisites
 
 Java Development Kit (JDK) 8 or higher
 
@@ -81,17 +81,8 @@ TestNG
 
 An IDE like IntelliJ IDEA or Eclipse
 
-Installation & Setup
 
-Clone the Repository:
-
-git clone https://github.com/RashmiNinawe13/writewave.git
-
-Navigate to the Project Directory:
-
-cd writewave/automation_testing
-
-Install Dependencies:
+# Install Dependencies:
 
 mvn clean install
 
@@ -104,28 +95,4 @@ mvn test
 Execute Specific Test Suite:
 
 mvn test -DsuiteXmlFile=testng.xml
-
-Reporting
-
-Test execution reports are generated and can be found in the reports/ folder.
-
-Contributing
-
-To contribute:
-
-Fork the repository.
-
-Create a new branch (feature-branch-name).
-
-Commit your changes (git commit -m "Description of changes").
-
-Push to the branch (git push origin feature-branch-name).
-
-Open a Pull Request.
-
-Contact
-
-For any inquiries, please reach out to the project maintainers.
-
-Happy Testing! 🚀
 

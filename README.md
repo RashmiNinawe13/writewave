@@ -1,22 +1,6 @@
 # writewave
 📝 Introduction
-selenium-pom-login/
-│── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── pages/
-│   │   │   │   ├── LoginPage.java
-│   │   │   │   ├── DashboardPage.java
-│   │   │   │   ├── CreatePostPage.java
-│   │   │   ├── utils/
-│   │   │   │   ├── DriverManager.java
-│   ├── test/
-│   │   ├── java/
-│   │   │   ├── tests/
-│   │   │   │   ├── LoginTest.java
-│   │   │   │   ├── CreatePostTest.java
-│── pom.xml (Maven dependencies)
-│── README.md (Project documentation)
+
 
 This project involves the manual testing of the WriteWave Clone Website provided by Masai School. The testing ensured the website's functionality and usability while identifying potential issues.
 

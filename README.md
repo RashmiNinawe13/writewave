@@ -89,11 +89,13 @@ mvn clean install
 Running Tests
 
 Execute All Tests:
-video link:https://drive.google.com/drive/folders/1ucBRE3GAc-n__I72Lc5M9vh1k-f_u3W2?usp=sharing
 
 mvn test
 
 Execute Specific Test Suite:
 
 mvn test -DsuiteXmlFile=testng.xml
+
+## video link:https://drive.google.com/drive/folders/1ucBRE3GAc-n__I72Lc5M9vh1k-f_u3W2?usp=sharing
+
 
